@@ -1,0 +1,77 @@
+﻿<Fluent:RibbonWindow x:Class="BookStoreUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStoreUI"
+        xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
+        mc:Ignorable="d"
+        Name="main" Title="Quản Lý Nhà Sách" Height="600" Width="800" Loaded="RibbonWindow_Loaded" Icon="Resources/Icon/bookstore.png" WindowStartupLocation="CenterScreen" Background="#FFDBF1E6" Closing="main_Closing">
+    <Grid>
+        <Fluent:Ribbon >
+            <Fluent:RibbonTabItem Header="HỆ THỐNG">
+                <Fluent:RibbonGroupBox Header="Tài khoản">
+                    <Fluent:Button Name="btThongTin" Header="Thông tin" LargeIcon="Resources/Icon/Info.png" Click="btThongTin_Click"/>
+                    <Fluent:Button Name="btDangNhap" Header="Đăng nhập"  LargeIcon="Resources/Icon/Lock.png" Click="btDangNhap_Click"/>
+                    <Fluent:Button Name="btDangXuat" Header="Đăng xuất" LargeIcon="Resources/Icon/Out.png" Click="btDangXuat_Click" />
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="Quy định">
+                    <Fluent:Button Name="btXem" Header="Xem" LargeIcon="Resources/Icon/Show.png"/>
+                    <Fluent:Button Name="btThayDoi" Header="Thay đổi" LargeIcon="Resources/Icon/Edit.png"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox >
+                    <Fluent:Button Name="tabHeThong_btThoat" Header="Thoát" LargeIcon="Resources/Icon/CloseProgram.png" Click="tabHeThong_btThoat_Click" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Name="tabQuanLy" Header="QUẢN LÝ">
+                <Fluent:RibbonGroupBox Name="grTaiKhoan" Header="Tài khoản">
+                    <Fluent:Button Name="btQLTaiKhoan" Header="Quản lý tài khoản" LargeIcon="Resources/Icon/EditAcount.png" Click="btQLTaiKhoan_Click" />
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="Sách">
+                    <Fluent:Button Header="Danh mục Sách" LargeIcon="Resources/Icon/Book.png"/>
+                    <Fluent:Button Header="Hóa đơn bán Sách" LargeIcon="Resources/Icon/Bill.png"/>
+                    <Fluent:Button Header="Phiếu nhập Sách" LargeIcon="Resources/Icon/AddBill.png"/>
+                    <Fluent:Button Header="Quản lý Sách" LargeIcon="Resources/Icon/BookQ.png"/>
+                    <Fluent:Button Name="btTacGia" Header="Quản lý Tác Giả" LargeIcon="Resources/Icon/BookQ.png" Click="btTacGia_Click" />
+                    <Fluent:Button Name="btTheLoai" Header="Quản lý Thể Loại Sách" LargeIcon="Resources/Icon/BookQ.png" Click="btTheLoai_Click"  />
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="Khách hàng">
+                    <Fluent:Button Header="Danh sách Khách Hàng" LargeIcon="Resources/Icon/Customer.png"/>
+                    <Fluent:Button Header="Quản lý Khách Hàng" LargeIcon="Resources/Icon/CustomerQ.png"/>
+                    <Fluent:Button x:Name="btLapPhieuThuTien" Header="Lập phiếu thu tiền" LargeIcon="Resources/Icon/NewPT.png" Click="btLapPhieuThuTien_Click"/>
+                    <Fluent:Button Header="In hóa đơn" LargeIcon="Resources/Icon/PrintHD.png"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Name="tabTraCuu" Header="TRA CỨU">
+                <Fluent:RibbonGroupBox >
+                    <Fluent:Button Name="btTraCuuSach" Header="Tra cứu sách" LargeIcon="Resources/Icon/Find.png" Click="btTraCuuSach_Click"/>
+                    <Fluent:Button Name="btTraCuuKhachHang" Header="Tra cứu khách hàng" LargeIcon="Resources/Icon/FindCustomer.png"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Name="tabBaoCao" Header="BÁO CÁO">
+                <Fluent:RibbonGroupBox >
+                    <Fluent:Button Header="Lập Báo Cáo Tháng" LargeIcon="Resources/Icon/Report.png"/>
+                    <Fluent:Button Header="Thống kê sách bán chạy" LargeIcon="Resources/Icon/Report2.png"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Header="TRỢ GIÚP">
+                <Fluent:RibbonGroupBox >
+                    <Fluent:Button Header="Thông tin chương trình" LargeIcon="Resources/Icon/Help.png"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+
+        <Grid  Name="grid" Margin="0,143,-0.4,0.4">
+           
+        </Grid>
+    </Grid>
+
+</Fluent:RibbonWindow>

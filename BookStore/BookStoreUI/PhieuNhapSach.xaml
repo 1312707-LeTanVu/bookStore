@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="BookStoreUI.PhieuNhapSach"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookStoreUI"
+             mc:Ignorable="d" Height="351.2" Width="312">
+    <Grid>
+        <Label Content="PHIẾU NHẬP SÁCH" HorizontalAlignment="Left" FontSize="25" Margin="10,10,0,0" VerticalAlignment="Top" Height="42" Width="226"/>
+        <Label x:Name="label" Content="Danh sách phiếu nhập" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Height="135" Width="292">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="130" Header="Mã phiếu nhập sách" Binding="{Binding MaPhieuNhapSach}" />
+                <DataGridTextColumn Width="150" Header="Ngày nhập" Binding="{Binding NgayNhap}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="label1" Content="Mã phiếu nhập sách" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Ngày nhập" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="135,90,0,0" VerticalAlignment="Top" Width="167"/>
+        <Button x:Name="btThem" Content="Thêm" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" Width="67" FontSize="16" Height="27" RenderTransformOrigin="0.866,0.437"/>
+        <Button x:Name="btSua" Content="Sửa" HorizontalAlignment="Left" Margin="116,119,0,0" VerticalAlignment="Top" Width="70" FontSize="16" Height="27"/>
+        <Button x:Name="btXoa" Content="Xóa" HorizontalAlignment="Left" Margin="227,119,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Height="27"/>
+        <Button x:Name="btThoat" Content="Thoát" Margin="227,317,0,0" FontSize="16" HorizontalAlignment="Left" Width="75" Height="24" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbl" HorizontalAlignment="Left" Margin="135,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="167" FontSize="14.667"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6ED793E1-D774-4545-ACDE-1100CD95539F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookStoreUI</RootNamespace>
+    <AssemblyName>BookStoreUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Fluent">
+      <HintPath>E:\Tai lieu hoc 2016\Lap trinh Windows\De tai tim hieu\Fluent.Ribbon.3.0.3\Fluent\bin\NET 4.5\Release\Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>E:\Tai lieu hoc 2016\Phan tich va thiet ke phan mem\Do an\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ChiTietPhieuThuTien.xaml.cs">
+      <DependentUpon>ChiTietPhieuThuTien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TacGiaUI.xaml.cs">
+      <DependentUpon>TacGiaUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoanUI.xaml.cs">
+      <DependentUpon>TaiKhoanUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TheLoaiUI.xaml.cs">
+      <DependentUpon>TheLoaiUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTin.xaml.cs">
+      <DependentUpon>ThongTin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl.cs" />
+    <Page Include="BaoCaoCongNo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BaoCaoTonSach.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BaoCaoTop10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ChiTietHoaDon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ChiTietPhieuNhapSach.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DanhSachSach.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HoaDon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LapBaoCaoThang.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DangNhap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaoCaoCongNo.xaml.cs">
+      <DependentUpon>BaoCaoCongNo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoTonSach.xaml.cs">
+      <DependentUpon>BaoCaoTonSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoTop10.xaml.cs">
+      <DependentUpon>BaoCaoTop10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietHoaDon.xaml.cs">
+      <DependentUpon>ChiTietHoaDon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietPhieuNhapSach.xaml.cs">
+      <DependentUpon>ChiTietPhieuNhapSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachSach.xaml.cs">
+      <DependentUpon>DanhSachSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.xaml.cs">
+      <DependentUpon>HoaDon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LapBaoCaoThang.xaml.cs">
+      <DependentUpon>LapBaoCaoThang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.xaml.cs">
+      <DependentUpon>DangNhap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PhieuNhapSach.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ChiTietPhieuThuTien.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PhieuThuTien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TacGiaUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaiKhoanUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TheLoaiUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThongTin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PhieuNhapSach.xaml.cs">
+      <DependentUpon>PhieuNhapSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuThuTien.xaml.cs">
+      <DependentUpon>PhieuThuTien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon\AccountDelete.png" />
+    <Resource Include="Resources\Icon\AddAccount.png" />
+    <Resource Include="Resources\Icon\AddBill.png" />
+    <Resource Include="Resources\Icon\Bill.png" />
+    <Resource Include="Resources\Icon\Book.png" />
+    <Resource Include="Resources\Icon\BookQ.png" />
+    <Resource Include="Resources\Icon\CloseProgram.png" />
+    <Resource Include="Resources\Icon\Customer.png" />
+    <Resource Include="Resources\Icon\CustomerQ.png" />
+    <Resource Include="Resources\Icon\Edit.png" />
+    <Resource Include="Resources\Icon\EditAcount.png" />
+    <Resource Include="Resources\Icon\Find.png" />
+    <Resource Include="Resources\Icon\Findcustomer.png" />
+    <Resource Include="Resources\Icon\Help.png" />
+    <Resource Include="Resources\Icon\Info.png" />
+    <Resource Include="Resources\Icon\NewPT.png" />
+    <Resource Include="Resources\Icon\Out.png" />
+    <Resource Include="Resources\Icon\PrintHD.png" />
+    <Resource Include="Resources\Icon\Report.png" />
+    <Resource Include="Resources\Icon\Report2.png" />
+    <Resource Include="Resources\Icon\Show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Error.png" />
+    <Resource Include="Resources\Image\Information.png" />
+    <Resource Include="Resources\Image\Question.png" />
+    <Resource Include="Resources\Image\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon\bookstore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookStoreBUS\BookStoreBUS.csproj">
+      <Project>{bf6e6192-ebba-450f-8d56-c264d4c4d8ac}</Project>
+      <Name>BookStoreBUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{1068b3ae-80f1-40c2-b792-9d0db153aa5a}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

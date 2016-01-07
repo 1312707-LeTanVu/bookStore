@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="BookStoreUI.BaoCaoTop10"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookStoreUI"
+             mc:Ignorable="d" Height="276.765" Width="400.942">
+    <Grid>
+        <Label x:Name="label" Content="BÁO CÁO SÁCH BÁN CHẠY" FontSize="24" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Height="215" Width="381">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="30" Header="Stt" Binding="{Binding Stt}" />
+                <DataGridTextColumn Width="200" Header="Tên sách" Binding="{Binding TenSach}" />
+                <DataGridTextColumn Width="150" Header="Số lượng bán ra" Binding="{Binding SoLuongBanRa}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</UserControl>

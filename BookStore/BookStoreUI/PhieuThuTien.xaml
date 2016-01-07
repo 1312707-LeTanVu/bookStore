@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="BookStoreUI.PhieuThuTien"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookStoreUI"
+             mc:Ignorable="d" Height="342.187" Width="764.355" Loaded="UserControl_Loaded">
+    <Grid>
+        <Label Content="PHIẾU THU TIỀN" HorizontalAlignment="Left" FontSize="25" Margin="281,10,0,0" VerticalAlignment="Top" Height="42" Width="198"/>
+        <Label x:Name="label" Content="Danh sách phiếu thu tiền" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="11,198,0,0" VerticalAlignment="Top" Height="135" Width="736">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="60" Header="Mã phiếu thu tiền" Binding="{Binding MaPhieuThuTien}" />
+                <DataGridTextColumn Width="80" Header="Ngày nhập" Binding="{Binding NgayNhap}" />
+                <DataGridTextColumn Width="130" Header="Họ tên khách hàng" Binding="{Binding HoTenKhachHang}" />
+                <DataGridTextColumn Width="120" Header="Địa chỉ" Binding="{Binding DiaChi}" />
+                <DataGridTextColumn Width="100" Header="Số điện thoại" Binding="{Binding SoDienThoai}" />
+                <DataGridTextColumn Width="80" Header="Email" Binding="{Binding Email}" />
+                <DataGridTextColumn Width="150" Header="Số tiền thu" Binding="{Binding SoTienThu}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btThem" Content="Thêm" HorizontalAlignment="Left" Margin="498,165,0,0" VerticalAlignment="Top" Width="67" FontSize="16" Height="27" RenderTransformOrigin="0.866,0.437" Click="btThem_Click"/>
+        <Button x:Name="btSua" Content="Sửa" HorizontalAlignment="Left" Margin="24,135,0,0" VerticalAlignment="Top" Width="70" FontSize="16" Height="27"/>
+        <Button x:Name="btXoa" Content="Xóa" HorizontalAlignment="Left" Margin="127,135,0,0" VerticalAlignment="Top" Width="69" FontSize="16" Height="27"/>
+        <Label x:Name="label1" Content="Họ tên khách hàng:" HorizontalAlignment="Left" Margin="213,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Điện thoại:" HorizontalAlignment="Left" Margin="213,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Ngày thu tiền:" HorizontalAlignment="Left" Margin="213,118,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Địa chỉ:" HorizontalAlignment="Left" Margin="498,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="Email:" HorizontalAlignment="Left" Margin="498,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="Số tiền thu:" HorizontalAlignment="Left" Margin="498,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbHoTenKhachHang" HorizontalAlignment="Left" Height="23" Margin="327,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="tbDienThoai" HorizontalAlignment="Left" Height="23" Margin="327,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="tbDiaChi" HorizontalAlignment="Left" Height="23" Margin="572,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Height="23" Margin="572,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="tbSoTienThu" HorizontalAlignment="Left" Height="23" Margin="572,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <DatePicker Name="NgayThuTien" HorizontalAlignment="Left" Margin="327,120,0,0" VerticalAlignment="Top" Width="166" />
+        <Label x:Name="label7" Content="Nhập mã phiếu cần thao tác"  HorizontalAlignment="Left" Margin="24,78,0,0" VerticalAlignment="Top" Width="172" Height="26"/>
+        <TextBox x:Name="tbMaPhieu" HorizontalAlignment="Left" Height="23" Margin="24,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.368,-0.443"/>
+
+    </Grid>
+</UserControl>

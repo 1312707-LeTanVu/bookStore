@@ -50,7 +50,7 @@ namespace BookStoreDAO
         public void Update(TheLoai info)
         {
             string sqlQuery = "update TheLoai" +
-                              " set TenTheLoai='" + info.TenTheLoai + "' " +
+                              " set TenTheLoai='" + info.TenTheLoai + "', " +
                               "GhiChu='" + info.GhiChu + "' " +
                               "where MaTheLoai='" + info.MaTheLoai + "'";
 

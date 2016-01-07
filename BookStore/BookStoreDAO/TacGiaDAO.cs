@@ -33,7 +33,7 @@ namespace BookStoreDAO
         public void Insert(TacGia info)
         {
             string sqlQuery = "insert into TacGia values ('" +
-                info.MaTG + "','" +
+                info.MaTG + "',N'" +
                 info.TenTG + "')";
 
             ExecuteNonQuery(sqlQuery);

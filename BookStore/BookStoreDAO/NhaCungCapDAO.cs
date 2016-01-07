@@ -35,8 +35,8 @@ namespace BookStoreDAO
         public void Insert(NhaCungCap info)
         {
             string sqlQuery = "insert into NhaCungCap values ('" +
-                info.MaNCC + "','" +
-                info.TenNCC + "','" +
+                info.MaNCC + "',N'" +
+                info.TenNCC + "',N'" +
                 info.DiaChiNCC + "','" +
                 info.DienThoai + ")";
 

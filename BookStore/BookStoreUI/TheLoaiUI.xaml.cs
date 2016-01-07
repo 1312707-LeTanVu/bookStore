@@ -58,7 +58,7 @@ namespace BookStoreUI
         private void btThem_Click(object sender, RoutedEventArgs e)
         {
             TheLoai theLoai = new TheLoai() { MaTheLoai = (++id).ToString(), TenTheLoai = tbTenTheLoai.Text, GhiChu = tbGhiChu.Text };
-
+          
             TheLoaiBUS bus = new TheLoaiBUS();
 
             bus.Insert(theLoai);

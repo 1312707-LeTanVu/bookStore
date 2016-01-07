@@ -36,8 +36,8 @@ namespace BookStoreDAO
         public void Insert(KhachHang info)
         {
             string sqlQuery = "insert into KhachHang values ('" +
-                info.MaKH + "','" +
-                info.TenKH + "','" +
+                info.MaKH + "',N'" +
+                info.TenKH + "',N'" +
                 info.DiaChiKH + "','" +
                 info.SoDienThoai + "','" +
                 info.Email + "')";

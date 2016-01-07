@@ -38,7 +38,7 @@ namespace BookStoreDAO
         public void Insert(Sach info)
         {
             string sqlQuery = "insert into Sach values ('" +
-                info.MaSach + "','" +
+                info.MaSach + "',N'" +
                 info.TenSach + "','" +
                 info.TheLoai + "','" +
                 info.TacGia + "','" +

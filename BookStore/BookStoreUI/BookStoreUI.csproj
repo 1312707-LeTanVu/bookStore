@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Fluent">
-      <HintPath>E:\Tai lieu hoc 2016\Lap trinh Windows\De tai tim hieu\Fluent.Ribbon.3.0.3\Fluent\bin\NET 4.5\Release\Fluent.dll</HintPath>
+      <HintPath>.\Fluent.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -54,7 +54,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Xceed.Wpf.Toolkit">
-      <HintPath>E:\Tai lieu hoc 2016\Phan tich va thiet ke phan mem\Do an\Xceed.Wpf.Toolkit.dll</HintPath>
+      <HintPath>.\Xceed.Wpf.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

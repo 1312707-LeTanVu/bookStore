@@ -35,8 +35,8 @@ namespace BookStoreDAO
         public void Insert(NhaXuatBan info)
         {
             string sqlQuery = "insert into NhaXuatBan values ('" +
-                info.MaNXB + "','" +
-                info.TenNXB + "','" +
+                info.MaNXB + "',N'" +
+                info.TenNXB + "',N'" +
                 info.DiaChiNXB + "','" +
                 info.SoDienThoai + "')";
 

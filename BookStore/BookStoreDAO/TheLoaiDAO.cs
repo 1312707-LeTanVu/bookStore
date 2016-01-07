@@ -34,8 +34,8 @@ namespace BookStoreDAO
         public void Insert(TheLoai info)
         {
             string sqlQuery = "insert into TheLoai values ('" +
-                info.MaTheLoai + "','" +
-                info.TenTheLoai + "','" +
+                info.MaTheLoai + "',N'" +
+                info.TenTheLoai + "',N'" +
                 info.GhiChu + "')";
 
             ExecuteNonQuery(sqlQuery);

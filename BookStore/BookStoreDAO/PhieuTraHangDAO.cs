@@ -37,7 +37,7 @@ namespace BookStoreDAO
             string sqlQuery = "insert into PhieuTraHang values ('" +
                 info.MaKH + "','" +
                 info.MaSach + "','" +
-                info.MaKH + "','" +
+                info.MaKH + "',N'" +
                 info.LyDoTra + "')";
 
             ExecuteNonQuery(sqlQuery);

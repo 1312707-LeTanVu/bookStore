@@ -39,11 +39,11 @@ namespace BookStoreDAO
         public void Insert(NhanVien info)
         {
             string sqlQuery = "insert into NhanVien values ('" +
-                info.MaNV + "','" +
-                info.HoTen + "','" +
+                info.MaNV + "',N'" +
+                info.HoTen + "',N'" +
                 info.GioiTinh + "','" +
                 info.CMND + "','" +
-                info.NgaySinh.ToShortDateString() + "','" +
+                info.NgaySinh.ToShortDateString() + "',N'" +
                 info.DiaChi + "','" +
                 info.SDT + "','" +
                 info.TaiKhoan + "')";

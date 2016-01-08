@@ -4,10 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BookStoreUI"
-             mc:Ignorable="d" Height="328.571" Width="678.571" Loaded="UserControl_Loaded" Name="danhSachSach">
+             mc:Ignorable="d" Height="328.571" Width="739.069" Loaded="UserControl_Loaded" Name="danhSachSach">
     <Grid>
-        <Label x:Name="label" Content="DANH SÁCH SÁCH" HorizontalAlignment="Left" FontSize="24" Margin="234,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Height="215" Width="658">
+        <Label x:Name="label" Content="TRA CỨU SÁCH" HorizontalAlignment="Left" FontSize="24" Margin="234,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Height="215" Width="719">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="30" Header="Stt" Binding="{Binding Stt}" />
                 <DataGridTextColumn Width="170" Header="Tên sách" Binding="{Binding TenSach}" />

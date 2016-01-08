@@ -65,11 +65,20 @@
     <Compile Include="ChiTietPhieuThuTien.xaml.cs">
       <DependentUpon>ChiTietPhieuThuTien.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KhachHangUI.xaml.cs">
+      <DependentUpon>KhachHangUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NhaCungCapUI.xaml.cs">
       <DependentUpon>NhaCungCapUI.xaml</DependentUpon>
     </Compile>
     <Compile Include="NhaXuatBanUI.xaml.cs">
       <DependentUpon>NhaXuatBanUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachHangUI.xaml.cs">
+      <DependentUpon>QuanLyKhachHangUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLySachUI.xaml.cs">
+      <DependentUpon>QuanLySachUI.xaml</DependentUpon>
     </Compile>
     <Compile Include="TacGiaUI.xaml.cs">
       <DependentUpon>TacGiaUI.xaml</DependentUpon>
@@ -111,6 +120,10 @@
     <Page Include="HoaDon.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KhachHangUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="LapBaoCaoThang.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -179,6 +192,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="QuanLyKhachHangUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuanLySachUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TacGiaUI.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -232,10 +253,8 @@
     <Resource Include="Resources\Icon\AddAccount.png" />
     <Resource Include="Resources\Icon\AddBill.png" />
     <Resource Include="Resources\Icon\Bill.png" />
-    <Resource Include="Resources\Icon\Book.png" />
     <Resource Include="Resources\Icon\BookQ.png" />
     <Resource Include="Resources\Icon\CloseProgram.png" />
-    <Resource Include="Resources\Icon\Customer.png" />
     <Resource Include="Resources\Icon\CustomerQ.png" />
     <Resource Include="Resources\Icon\Edit.png" />
     <Resource Include="Resources\Icon\EditAcount.png" />
@@ -243,9 +262,7 @@
     <Resource Include="Resources\Icon\Findcustomer.png" />
     <Resource Include="Resources\Icon\Help.png" />
     <Resource Include="Resources\Icon\Info.png" />
-    <Resource Include="Resources\Icon\NewPT.png" />
     <Resource Include="Resources\Icon\Out.png" />
-    <Resource Include="Resources\Icon\PrintHD.png" />
     <Resource Include="Resources\Icon\Report.png" />
     <Resource Include="Resources\Icon\Report2.png" />
     <Resource Include="Resources\Icon\Show.png" />

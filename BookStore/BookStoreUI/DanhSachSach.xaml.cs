@@ -138,7 +138,7 @@ namespace BookStoreUI
             {
                 foreach (Sach i in _sach)
                 {
-                    if (i.TenSach == tbTenSach.Text && i.TheLoai==_maTheLoai)
+                    if (String.Compare(i.TenSach, tbTenSach.Text, true) == 0 && i.TheLoai==_maTheLoai)
                     {
                         ThongTinSach _thongTinSach = new ThongTinSach();
                         _thongTinSach.Stt = stt++;
@@ -158,7 +158,7 @@ namespace BookStoreUI
             {
                 foreach (Sach i in _sach)
                 {
-                    if (i.TenSach == tbTenSach.Text)
+                    if (String.Compare(i.TenSach, tbTenSach.Text, true) == 0)
                     {
                         ThongTinSach _thongTinSach = new ThongTinSach();
                         _thongTinSach.Stt = stt++;
@@ -181,7 +181,7 @@ namespace BookStoreUI
             _theLoai = _busTheLoai.GetList();
 
             cbbTheLoai.ItemsSource = _theLoai;
-            cbbTheLoai.DisplayMemberPath = "TenTheLoai";         
+            cbbTheLoai.DisplayMemberPath = "TenTheLoai";
         }
     }
 }

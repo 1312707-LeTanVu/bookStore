@@ -54,9 +54,9 @@ namespace BookStoreDAO
         public void Update(KhachHang info)
         {
             string sqlQuery = "update KhachHang" +
-                              " set TenKH='" + info.TenKH + "'," +
-                              "DiaChiKH='" + info.DiaChiKH + "'" +
-                              "SoDienThoai='"+info.SoDienThoai+"'"+
+                              " set TenKH=N'" + info.TenKH + "'," +
+                              "DiaChiKH=N'" + info.DiaChiKH + "'," +
+                              "SoDienThoai='"+info.SoDienThoai+"',"+
                               "Email='"+info.Email+"'"+
                               "where MaKH='" + info.MaKH + "'";
 

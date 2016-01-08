@@ -37,7 +37,7 @@ namespace BookStoreDAO
             string sqlQuery = "insert into NhaCungCap values ('" +
                 info.MaNCC + "',N'" +
                 info.TenNCC + "',N'" +
-                info.DiaChiNCC + "','" +
+                info.DiaChiNCC + "'," +
                 info.DienThoai + ")";
 
             ExecuteNonQuery(sqlQuery);
@@ -52,8 +52,8 @@ namespace BookStoreDAO
         public void Update(NhaCungCap info)
         {
             string sqlQuery = "update NhaCungCap" +
-                              " set TenNCC='" + info.TenNCC + "'," +
-                              "DiaChiNCC='" + info.DiaChiNCC + "'" +
+                              " set TenNCC=N'" + info.TenNCC + "'," +
+                              "DiaChiNCC=N'" + info.DiaChiNCC + "'," +
                               "DienThoai='"+info.DienThoai+"'"+
                               "where MaNCC='" + info.MaNCC + "'";
 

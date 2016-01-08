@@ -198,18 +198,11 @@ namespace BookStoreUI
         }
 
 
-        private void btLapPhieuThuTien_Click(object sender, RoutedEventArgs e)
+        private void btTacGia_Click(object sender, RoutedEventArgs e)
         {
             if (grid.Children.Count > 0)
                 grid.Children.RemoveAt(grid.Children.Count - 1);
 
-            PhieuThuTien phieuThuTien = new PhieuThuTien();
-
-            grid.Children.Add(phieuThuTien);
-        }
-
-        private void btTacGia_Click(object sender, RoutedEventArgs e)
-        {
             TacGiaUI tacGia = new TacGiaUI();
             tacGia.WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
@@ -218,6 +211,9 @@ namespace BookStoreUI
 
         private void btTheLoai_Click(object sender, RoutedEventArgs e)
         {
+            if (grid.Children.Count > 0)
+                grid.Children.RemoveAt(grid.Children.Count - 1);
+
             TheLoaiUI theLoai = new TheLoaiUI();
             theLoai.WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
@@ -227,6 +223,9 @@ namespace BookStoreUI
         int thangBaoCao;
         private void btLapBaoCaoThang_Click(object sender, RoutedEventArgs e)
         {
+            if (grid.Children.Count > 0)
+                grid.Children.RemoveAt(grid.Children.Count - 1);
+
             LapBaoCaoThang lapBaoCaoThang = new LapBaoCaoThang();
 
             if (lapBaoCaoThang.ShowDialog() == true)
@@ -237,10 +236,54 @@ namespace BookStoreUI
 
         private void btNhaXuatBan_Click(object sender, RoutedEventArgs e)
         {
+            if (grid.Children.Count > 0)
+                grid.Children.RemoveAt(grid.Children.Count - 1);
+
             NhaXuatBanUI nhaXuatBan = new NhaXuatBanUI();
             nhaXuatBan.WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
             nhaXuatBan.ShowDialog();
+        }
+
+        private void btNhaCungCap_Click(object sender, RoutedEventArgs e)
+        {
+            if (grid.Children.Count > 0)
+                grid.Children.RemoveAt(grid.Children.Count - 1);
+
+            NhaCungCapUI nhaCungCap = new NhaCungCapUI();
+            nhaCungCap.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
+            nhaCungCap.ShowDialog();
+        }
+
+        private void btTraCuuKhachHang_Click(object sender, RoutedEventArgs e)
+        {
+            if (grid.Children.Count > 0)
+                grid.Children.RemoveAt(grid.Children.Count - 1);
+
+            KhachHangUI nhaCungCap = new KhachHangUI();
+
+            grid.Children.Add(nhaCungCap);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (grid.Children.Count > 0)
+                grid.Children.RemoveAt(grid.Children.Count - 1);
+
+            QuanLyKhachHangUI quanLyKhachHang = new QuanLyKhachHangUI();
+
+            grid.Children.Add(quanLyKhachHang);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (grid.Children.Count > 0)
+                grid.Children.RemoveAt(grid.Children.Count - 1);
+
+            QuanLySachUI quanLySach = new QuanLySachUI();
+
+            grid.Children.Add(quanLySach);
         }
     }
 }

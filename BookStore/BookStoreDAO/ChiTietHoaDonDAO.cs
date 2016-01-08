@@ -24,7 +24,7 @@ namespace BookStoreDAO
                 chiTietHoaDon.MaHD = reader["MaHD"].ToString();
                 chiTietHoaDon.MaSach = reader["MaSach"].ToString();
                 chiTietHoaDon.SoLuong = (int) reader["SoLuong"];
-
+                chiTietHoaDon.MaCTHD = reader["MaCTHD"].ToString();
                 list.Add(chiTietHoaDon);
             }
 
@@ -33,17 +33,18 @@ namespace BookStoreDAO
 
         public void Insert(ChiTietHoaDon info)
         {
-            string sqlQuery="insert into ChiTietHoaDon values('"+
-                info.MaHD+"', '"+
-                info.MaSach+"' , "+
-                info.SoLuong +")";
+            string sqlQuery = "insert into ChiTietHoaDon values('" +
+                info.MaHD + "', '" +
+                info.MaSach + "' , '" +
+                info.SoLuong + "','" +
+                info.MaCTHD + "')";
 
             ExecuteNonQuery(sqlQuery);
         }
 
         public void Delete(string code)
         {
-            string sqlQuery = "delete from ChiTietHoaDon where MaHD='" + code + "'";
+            string sqlQuery = "delete from ChiTietHoaDon where MaCTHD='" + code + "'";
             ExecuteNonQuery(sqlQuery);
         }
 
@@ -52,7 +53,7 @@ namespace BookStoreDAO
             string sqlQuery = "update ChiTietHoaDon" +
                               " set MaSach='" + info.MaSach + "'," +
                               "SoLuong=" + info.SoLuong +
-                              "where MaHD='" + info.MaHD + "'";
+                              "where MaCTHD='" + info.MaCTHD + "'";
 
             ExecuteNonQuery(sqlQuery);
         }

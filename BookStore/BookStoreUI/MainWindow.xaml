@@ -33,7 +33,7 @@
 
                 <Fluent:RibbonGroupBox Header="Sách">
                     <Fluent:Button Header="Quản lý Sách" LargeIcon="Resources/Icon/BookQ.png" Click="Button_Click_1"/>
-                    <Fluent:Button Header="Hóa đơn bán Sách" LargeIcon="Resources/Icon/Bill.png"/>
+                    <Fluent:Button Name="btQLHoaDon" Header="Hóa đơn bán Sách" LargeIcon="Resources/Icon/Bill.png" Click="btQLHoaDon_Click"/>
                     <Fluent:Button Header="Phiếu nhập Sách" LargeIcon="Resources/Icon/AddBill.png"/>   
                     <Fluent:Button Name="btTacGia" Header="Tác giả" LargeIcon="Resources/Icon/author.png" Click="btTacGia_Click" />
                     <Fluent:Button Name="btTheLoai" Header="Thể loại sách" LargeIcon="Resources/Icon/category_book.png" Click="btTheLoai_Click"  />

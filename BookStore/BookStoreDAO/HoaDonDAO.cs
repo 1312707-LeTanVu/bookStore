@@ -22,8 +22,7 @@ namespace BookStoreDAO
                 HoaDon hoaDon = new HoaDon();
 
                 hoaDon.MaHD = reader["MaHD"].ToString();
-                hoaDon.MaKH = reader["MaKH"].ToString();
-                hoaDon.MaNV = reader["MaNV"].ToString();
+                hoaDon.TenKH = reader["TenKH"].ToString();             
                 hoaDon.NgayLapHD = (DateTime)reader["NgayLapHD"];
 
                 list.Add(hoaDon);
@@ -34,12 +33,12 @@ namespace BookStoreDAO
 
         public void Insert(HoaDon info)
         {
+            string date = info.NgayLapHD.Month + "/" + info.NgayLapHD.Day + "/" + info.NgayLapHD.Year;
             string sqlQuery = "insert into HoaDon values ('" +
-                info.MaHD + "','" +
-                info.MaKH + "','" +
-                info.MaNV + "','" +
-                info.NgayLapHD.ToShortDateString() + "')";
-
+                info.MaHD + "',N'" +
+                info.TenKH + "','" +            
+                date + "')";
+           
             ExecuteNonQuery(sqlQuery);
         }
 
@@ -51,10 +50,10 @@ namespace BookStoreDAO
 
         public void Update(HoaDon info)
         {
+            string date = info.NgayLapHD.Month + "/" + info.NgayLapHD.Day + "/" + info.NgayLapHD.Year;
             string sqlQuery = "update HoaDon" +
-                              " set MaKH='" + info.MaKH + "'," +
-                              "MaNV='" + info.MaNV + "'" +
-                              "NgayLapHD='"+info.NgayLapHD.ToShortDateString()+"'"+
+                              " set TenKH=N'" + info.TenKH + "'," +                            
+                              "NgayLapHD='"+date+"'"+
                               "where MaHD='" + info.MaHD + "'";
 
             ExecuteNonQuery(sqlQuery);

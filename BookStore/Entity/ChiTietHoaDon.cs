@@ -8,6 +8,13 @@ namespace Entity
 {
     public class ChiTietHoaDon
     {
+        private string maCTHD;
+
+        public string MaCTHD
+        {
+            get { return maCTHD; }
+            set { maCTHD = value; }
+        }
         private string maHD;
 
         public string MaHD

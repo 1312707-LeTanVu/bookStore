@@ -66,7 +66,7 @@ namespace BookStoreUI
                     {
                         foreach (KhachHang kh in dsKhachHang)
                         {
-                            if (kh.MaKH == hd.MaKH)
+                            if (kh.MaKH == hd.TenKH)
                             {
                                 info.HoTenKhachHang = kh.TenKH;
                                 info.SoDienThoai = kh.SoDienThoai;

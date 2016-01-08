@@ -15,20 +15,14 @@ namespace Entity
             get { return maHD; }
             set { maHD = value; }
         }
-        private string maKH;
+        private string tenKH;
 
-        public string MaKH
+        public string TenKH
         {
-            get { return maKH; }
-            set { maKH = value; }
+            get { return tenKH; }
+            set { tenKH = value; }
         }
-        private string maNV;
 
-        public string MaNV
-        {
-            get { return maNV; }
-            set { maNV = value; }
-        }
         private DateTime ngayLapHD;
 
         public DateTime NgayLapHD

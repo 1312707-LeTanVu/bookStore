@@ -29,6 +29,6 @@ namespace BookStoreBUS
         public void Update(HoaDon info)
         {
             data.Update(info);
-        }
+        }       
     }
 }

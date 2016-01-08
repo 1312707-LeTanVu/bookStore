@@ -65,6 +65,12 @@
     <Compile Include="ChiTietPhieuThuTien.xaml.cs">
       <DependentUpon>ChiTietPhieuThuTien.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NhaCungCapUI.xaml.cs">
+      <DependentUpon>NhaCungCapUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NhaXuatBanUI.xaml.cs">
+      <DependentUpon>NhaXuatBanUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TacGiaUI.xaml.cs">
       <DependentUpon>TacGiaUI.xaml</DependentUpon>
     </Compile>
@@ -153,6 +159,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NhaCungCapUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NhaXuatBanUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PhieuNhapSach.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -257,6 +271,12 @@
       <Project>{1068b3ae-80f1-40c2-b792-9d0db153aa5a}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon\author.png" />
+    <Resource Include="Resources\Icon\category_book.png" />
+    <Resource Include="Resources\Icon\delivery.png" />
+    <Resource Include="Resources\Icon\enterprise_business.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

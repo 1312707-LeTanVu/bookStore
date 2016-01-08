@@ -223,5 +223,24 @@ namespace BookStoreUI
 
             theLoai.ShowDialog();
         }
+
+        int thangBaoCao;
+        private void btLapBaoCaoThang_Click(object sender, RoutedEventArgs e)
+        {
+            LapBaoCaoThang lapBaoCaoThang = new LapBaoCaoThang();
+
+            if (lapBaoCaoThang.ShowDialog() == true)
+            {
+                thangBaoCao = lapBaoCaoThang.Month;
+            }
+        }
+
+        private void btNhaXuatBan_Click(object sender, RoutedEventArgs e)
+        {
+            NhaXuatBanUI nhaXuatBan = new NhaXuatBanUI();
+            nhaXuatBan.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
+            nhaXuatBan.ShowDialog();
+        }
     }
 }

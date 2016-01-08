@@ -65,7 +65,17 @@ namespace BookStoreUI
 
             TacGiaBUS bus = new TacGiaBUS();
 
-            bus.Insert(tacGia);
+            try
+            {
+                bus.Insert(tacGia);
+
+                MessageBox.Show("Thêm thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Thêm thất bại !");
+            }
+            
 
             LoadData();
         }
@@ -76,7 +86,17 @@ namespace BookStoreUI
 
             TacGiaBUS bus = new TacGiaBUS();
 
-            bus.Update(tacGia);
+            try
+            {
+                bus.Update(tacGia);
+
+                MessageBox.Show("Sửa thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Sửa thất bại !");
+            }
+           
 
             LoadData();
         }
@@ -85,7 +105,17 @@ namespace BookStoreUI
         {
             TacGiaBUS bus = new TacGiaBUS();
 
-            bus.Delete(tbMaTacGia.Text);
+            try
+            {
+                bus.Delete(tbMaTacGia.Text);
+
+                MessageBox.Show("Xóa thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xóa thất bại !");
+            }
+            
 
             LoadData();
         }

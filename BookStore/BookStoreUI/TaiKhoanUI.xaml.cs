@@ -65,7 +65,17 @@ namespace BookStoreUI
 
             TaiKhoanBUS bus = new TaiKhoanBUS();
 
-            bus.Insert(taiKhoan);
+            try
+            {
+                bus.Insert(taiKhoan);
+
+                MessageBox.Show("Thêm thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Thêm thất bại !");
+            }
+            
 
             LoadData();
         }
@@ -74,8 +84,17 @@ namespace BookStoreUI
         {
             TaiKhoanBUS bus = new TaiKhoanBUS();
 
-            bus.Delete(tbTaiKhoan.Text);
-            
+            try
+            {
+                bus.Delete(tbTaiKhoan.Text);
+
+                MessageBox.Show("Xóa thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xóa thất bại !");
+            }
+
             LoadData();
         }
 
@@ -85,7 +104,16 @@ namespace BookStoreUI
 
             TaiKhoanBUS bus = new TaiKhoanBUS();
 
-            bus.Update(taiKhoan);
+            try
+            {
+                bus.Update(taiKhoan);
+
+                MessageBox.Show("Sửa thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Sửa thất bại !");
+            }
 
             LoadData();
         }

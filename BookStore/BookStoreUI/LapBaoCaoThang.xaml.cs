@@ -18,11 +18,30 @@ namespace BookStoreUI
     /// <summary>
     /// Interaction logic for LapBaoCaoThang.xaml
     /// </summary>
-    public partial class LapBaoCaoThang : UserControl
+    public partial class LapBaoCaoThang : Window
     {
         public LapBaoCaoThang()
         {
             InitializeComponent();
+        }
+
+        public int Month { get; set; }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            for(int i = 1; i < 13; i++)
+            {
+                cbbThang.Items.Add(i);
+            }
+
+            cbbThang.SelectedIndex = 0;
+        }
+
+        private void btXuatBaoCao_Click(object sender, RoutedEventArgs e)
+        {
+            Month = int.Parse(cbbThang.Text);
+
+            DialogResult = true;
         }
     }
 }

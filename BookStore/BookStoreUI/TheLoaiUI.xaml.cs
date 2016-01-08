@@ -61,7 +61,17 @@ namespace BookStoreUI
           
             TheLoaiBUS bus = new TheLoaiBUS();
 
-            bus.Insert(theLoai);
+            try
+            {
+                bus.Insert(theLoai);
+
+                MessageBox.Show("Thêm thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Thêm thất bại !");
+            }
+           
 
             LoadData();
         }
@@ -72,8 +82,17 @@ namespace BookStoreUI
 
             TheLoaiBUS bus = new TheLoaiBUS();
 
-            bus.Update(theLoai);
+            try
+            {
+                bus.Update(theLoai);
 
+                MessageBox.Show("Sửa thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Sửa thất bại !");
+            }
+            
             LoadData();
         }
 
@@ -81,7 +100,16 @@ namespace BookStoreUI
         {
             TheLoaiBUS bus = new TheLoaiBUS();
 
-            bus.Delete(tbMaTheLoai.Text);
+            try
+            {
+                bus.Delete(tbMaTheLoai.Text);
+
+                MessageBox.Show("Xóa thành công !");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xóa thất bại !");
+            }
 
             LoadData();
         }

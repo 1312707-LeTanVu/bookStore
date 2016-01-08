@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="BookStoreUI.KhachHangUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookStoreUI"
+             mc:Ignorable="d" 
+             Height="328.571" Width="678.571">
+    <Grid>
+        <Label x:Name="label" Content="TRA CỨU KHÁCH HÀNG" HorizontalAlignment="Left" FontSize="24" Margin="204,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Height="215" Width="658">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="100" Header="Mã khách hàng" Binding="{Binding MaKhachHang}" />
+                <DataGridTextColumn Width="200" Header="Tên khách hàng" Binding="{Binding TenKhachHang}" />
+                <DataGridTextColumn Width="130" Header="Địa chỉ" Binding="{Binding DiaChi}" />
+                <DataGridTextColumn Width="100" Header="Số điện thoại" Binding="{Binding SoDienThoai}" />
+                <DataGridTextColumn Width="100" Header="Email" Binding="{Binding Email}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="label1" Content="Tên khách hàng:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbTenKhachHang" HorizontalAlignment="Left" Height="23" Margin="111,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="376"/>
+        <Button x:Name="btTim" Content="Tìm" HorizontalAlignment="Left" Margin="535,60,0,0" VerticalAlignment="Top" Width="86" Height="28" RenderTransformOrigin="0.497,0.533" Click="btTim_Click"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="BookStoreUI.QuanLySachUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookStoreUI"
+             mc:Ignorable="d" 
+             Height="391.806" Width="744.993" Loaded="UserControl_Loaded" >
+    <Grid>
+        <Label x:Name="label" Content="QUẢN LÝ SÁCH" HorizontalAlignment="Left" FontSize="24" Margin="309,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top" Height="230" Width="725">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="50" Header="Mã sách" Binding="{Binding MaSach}" />
+                <DataGridTextColumn Width="150" Header="Tên sách" Binding="{Binding TenSach}" />
+                <DataGridTextColumn Width="90" Header="Thể loại" Binding="{Binding TheLoai}" />
+                <DataGridTextColumn Width="90" Header="Tác giả" Binding="{Binding TacGia}" />
+                <DataGridTextColumn Width="90" Header="Nhà xuất bản" Binding="{Binding NhaXuatBan}" />
+                <DataGridTextColumn Width="90" Header="Năm xuất bản" Binding="{Binding NamXuatBan}" />
+                <DataGridTextColumn  Width="90" Header="Giá bán" Binding="{Binding GiaBan}" />
+                <DataGridTextColumn Width="90" Header="Số lượng" Binding="{Binding SoLuong}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="label1" Content="Tên sách" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbTenSach" HorizontalAlignment="Left" Height="23" Margin="104,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <Label x:Name="label2" Content="Nhà xuất bản" HorizontalAlignment="Left" Margin="265,91,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Thể loại" HorizontalAlignment="Left" Margin="265,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Năm xuất bản" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.554"/>
+        <TextBox x:Name="tbNamXuatBan" HorizontalAlignment="Left" Height="23" Margin="104,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <Label x:Name="label5" Content="Mã sách" HorizontalAlignment="Left" Margin="545,71,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbMaSach" HorizontalAlignment="Left" Height="23" Margin="641,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67"/>
+        <Button x:Name="btSua" Content="Sửa" HorizontalAlignment="Left" Margin="545,105,0,0" VerticalAlignment="Top" Width="70" FontSize="16" Height="27" Click="btSua_Click" />
+        <Button x:Name="btXoa" Content="Xóa" HorizontalAlignment="Left" Margin="633,104,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Height="27" Click="btXoa_Click" />
+        <ComboBox x:Name="cbbTheLoai" HorizontalAlignment="Left" Margin="352,64,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label x:Name="label6" Content="Tác giả" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbbTacGia" HorizontalAlignment="Left" Margin="104,94,0,0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.495,0.517"/>
+        <ComboBox x:Name="cbbNhaXuatBan" HorizontalAlignment="Left" Margin="352,94,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label x:Name="label7" Content="Giá bán" HorizontalAlignment="Left" Margin="265,122,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbGiaBan" HorizontalAlignment="Left" Height="23" Margin="352,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+    </Grid>
+</UserControl>

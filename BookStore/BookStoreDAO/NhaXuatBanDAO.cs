@@ -52,8 +52,8 @@ namespace BookStoreDAO
         public void Update(NhaXuatBan info)
         {
             string sqlQuery = "update NhaXuatBan" +
-                              " set TenNXB='" + info.TenNXB + "'," +
-                              "DiaChiNXB='" + info.DiaChiNXB + "'" +
+                              " set TenNXB=N'" + info.TenNXB + "'," +
+                              "DiaChiNXB=N'" + info.DiaChiNXB + "'," +
                               "SoDienThoai='" + info.SoDienThoai + "'" +
                               "where MaNXB='" + info.MaNXB + "'";
 

@@ -48,7 +48,7 @@ namespace BookStoreDAO
         public void Update(TacGia info)
         {
             string sqlQuery = "update TacGia" +
-                              " set TenTG='" + info.TenTG + "'" +
+                              " set TenTG=N'" + info.TenTG + "'" +
                               "where MaTG='" + info.MaTG + "'";
 
             ExecuteNonQuery(sqlQuery);
